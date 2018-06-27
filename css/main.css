@@ -1,0 +1,410 @@
+/*
+* @Author: Star
+* @Date:   2018-06-26 12:02:50
+* @Last Modified by:   Star
+* @Last Modified time: 2018-06-27 13:02:26
+*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+
+}
+
+.header-wrapper {
+	height: 180px;
+	width: 1140px;
+	margin:0 44.5px;
+	padding: 0 60px;
+}
+
+#navigator {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-logo {
+	line-height: 30px;
+	width: 110px;
+	margin-right: 200px;
+	margin-top: 74px;
+}
+
+.nav-logo a{
+	color: #000;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Microsoft YaHei';
+}
+
+.nav-items {
+	display: flex;
+}
+
+.nav-items .nav-item {
+	margin-top: 84px;
+    display: inline-block;
+    padding: 0 23px;
+    flex-grow: 0;
+}
+
+.nav-items .nav-item a{
+	color: #000;
+	font-size: 16px;
+	font-family: 'Microsoft YaHei';
+}
+
+.nav-items .nav-item a:after {
+	content: '';
+    background: #000;
+    height: 2px;
+    display: block;
+    width: 100%;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all .2s cubic-bezier(0.18, 0.89, 0.17, 0.88), opacity .15s ease;
+	border-radius: 2px;
+}
+
+.nav-items .nav-item:hover a:after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.nav-items .nav-item  a:after {
+    opacity: 1;
+}
+
+.nav-search {
+	width: 110px;
+	height: 30px;
+	margin-top: 84px;
+	margin-left: 232px;
+}
+
+.nav-search a {
+	background: url('../image/search.svg') no-repeat center;
+	background-size: 28px 28px;
+	width: 110px;
+	height: 30px;
+}
+
+.nav-search a:hover {
+	cursor: pointer;
+}
+/*
+
+ */
+section.list {
+	padding: 0 44.5px;
+	height: 2104px;
+}
+
+.animate-out {
+
+}
+
+.main {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.article-items {
+	position: relative;
+	width: 100%;
+	font-size: 0;
+}
+
+.article-item {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+    width: 101%;
+}
+
+.article-item img {
+	padding:0; 
+	border:0;
+	margin:0;
+	display:block;
+}
+
+.article-item .img-color-no {
+	opacity: 1;
+}
+
+.article-item .img-color {
+	margin-top: -420px;
+	opacity: 0;
+}
+
+.article-item a:hover .img-color-no {
+	opacity: 0;
+}
+
+.article-item a:hover .img-color {
+	transform: scale(1.05);
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+.article-items .article-item:nth-child(1) {
+    width: 66.6666%;
+    float: left;
+}
+
+.article-items .article-item:nth-child(2) {
+    width: 33.3333%;
+    float: right;
+}
+
+.article-items .article-item:nth-child(3) {
+    width: 33.3333%;
+}
+
+.article-items .article-item:nth-child(3) .img-color {
+	margin-top: -840px;
+}
+
+.article-items .article-item:nth-child(4) {
+    width: 33.3333%;
+    margin-bottom: 420px;
+}
+
+.article-items .article-item:nth-child(4) img {
+	width: 420px;
+	height: 420px;
+}
+
+.article-items .article-item:nth-child(5) {
+    width: 33.3333%;
+    float: right;
+}
+
+.article-items .article-item:nth-child(6) {
+    width: 66.6666%;
+    /*height: 420px;*/
+    margin-top: -420px;
+    float: right;
+}
+
+.article-items .article-item:nth-child(6) img {
+	width: 840px;
+	height: 420px;
+}
+
+
+
+.article-items .article-item:nth-child(7) {
+    width: 66.6666%;
+    width: 840px;
+    float: left;
+}
+
+.article-items .article-item:nth-child(7) .img-color {
+	width: 840px;
+	margin-top: -840px;
+}
+
+.article-items .article-item:nth-child(8) {
+    width: 33.3333%;
+    float: right;
+}
+
+.article-items .article-item:nth-child(9) {
+    width: 33.3333%;
+    float: right;
+}
+
+.article-items .article-item:nth-child(9) img {
+	width: 420px;
+}
+
+.article-item a {
+
+}
+
+a .img {
+	transition: clip 0.4s 0.2s cubic-bezier(0,.3,.6,1),
+    transform 0.4s 0.2s ease,
+    opacity 0.4s 0.2s ease, 
+    -webkit-transform 0.4s 0.2s ease,
+    -webkit-clip 0.4s 0.2s cubic-bezier(0,.3,.6,1)
+}
+
+a .img-color {
+
+}
+
+a .title-wrapper {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.title-fix {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+}
+
+.title {
+	font-family: Microsoft YaHei;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: normal;
+    padding: 20px 0;
+    width: 320px;
+    max-width: 320px;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: all .3s ease;	
+}
+
+.article-items .article-item:nth-child(9) h3.title {
+	color: #fff;
+}
+
+
+footer {
+	position: relative;
+    /*z-index: 10009;*/
+    max-width: 1260px;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    font-family: Microsoft YaHei;
+}
+
+.footer-fix {
+	background: #fff;
+}
+
+.inner-wrapper {
+    width: 10%;
+    max-width: 1260px;
+    height: 145px;
+    min-height: 145px;
+}
+
+.footer-social {
+}
+
+.inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 24px;
+    width: 100%;
+    transition: transform .3s cubic-bezier(0.555, 0.205, 0.295, 0.975);
+}
+
+.items {
+
+}
+
+.item {
+	background-size: 24px 24px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.6;
+    cursor: pointer;
+    vertical-align: top;
+    margin: 0 20px;
+    display: inline-block;	
+}
+
+.wechat {
+	background: url('../image/wechat.svg') no-repeat center;
+
+}
+
+.weibo {
+	background: url(../image/weibo.svg) no-repeat center;
+}
+
+a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+span.content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -115px;
+    background: #FFF;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+.wechat a:hover .content{
+	opacity: 1;
+	visibility: visible;
+	bottom: 50px;
+}
+
+.footer-sufix {
+	margin: 0 auto;
+}
+
+.social {
+
+}
+
+.social-wrapper {
+	display: flex;
+    -webkit-display: inline-flex;
+    align-items: center;
+    height: 220px;
+    min-height: 220px;
+     width: 100%; 
+    max-width: 1260px;
+    padding: 0 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-link {
+    display: inline-block;
+    margin-right: 30px;
+    color: #777;
+    font-weight: 500;
+}
+
+.footer-link a {
+	color: #777;
+}
+
+.copyright {
+    font-family: Gotham-Book;
+    text-align: right;
+    flex-grow: 1;
+    color: #777;
+}
+
+
